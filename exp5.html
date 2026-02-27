@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mini Web App</title>
+</head>
+<body>
+
+<h2>Calendar App</h2>
+
+Month:
+<select id="month"></select>
+Year:
+<select id="year"></select>
+
+<button onclick="changeColor()">Change Background</button>
+
+<div id="calendar"></div>
+
+<script>
+// Fill dropdowns
+for(let i=1;i<=12;i++)
+ month.innerHTML += `<option value=${i}>${i}</option>`;
+
+for(let i=2024;i<=2030;i++)
+ year.innerHTML += `<option>${i}</option>`;
+
+// Change background
+function changeColor(){
+ let colors=["lightblue","lightgreen","lightpink","lightyellow"];
+ document.body.style.background=
+ colors[Math.floor(Math.random()*colors.length)];
+}
+
+// Generate calendar
+month.onchange=generate;
+year.onchange=generate;
+
+function generate(){
+ let m=month.value;
+ let y=year.value;
+ let days=new Date(y,m,0).getDate();
+ let text="<h3>Days:</h3>";
+ for(let i=1;i<=days;i++)
+   text+=i+" ";
+ document.getElementById("calendar").innerHTML=text;
+}
+</script>
+
+</body>
+</html>

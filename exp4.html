@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Check Console</h2>
+
+<script>
+// IF ELSE
+let num = 5;
+if(num>0)
+ console.log("Positive");
+else
+ console.log("Negative");
+
+// SWITCH
+let day=2;
+switch(day){
+ case 1: console.log("Mon"); break;
+ case 2: console.log("Tue"); break;
+ default: console.log("Other");
+}
+
+// FOR LOOP
+for(let i=1;i<=5;i++)
+ console.log(i);
+
+// WHILE LOOP
+let j=1;
+while(j<=3){
+ console.log("While",j);
+ j++;
+}
+
+// SET
+let s=new Set([1,2,2,3]);
+console.log(s);
+
+// MAP
+let m=new Map();
+m.set("name","Lucky");
+console.log(m);
+
+// TYPEOF & Conversion
+console.log(typeof 10);
+console.log(Number("123"));
+</script>
+
+</body>
+</html>

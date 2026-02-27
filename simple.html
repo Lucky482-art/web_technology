@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web page</title>
+</head>
+<body>
+    <h2>
+        Check Console
+    </h2>
+    <script>
+        let a=10
+        if (a>5)
+            console.log("Positive");
+        else
+            console.log("Negative");
+
+        let day=3
+        switch(day){
+            case 1:console.log("Mon"); break
+            case 2:console.log("Tue"); break
+            default: console.log("Other")
+        } 
+        
+        for(let i=0;i<=5;i++)
+        {
+            console.log(i);
+        }
+
+        let j=1;
+        while(j<=3){
+            console.log("While",j)
+            j++;
+        }
+
+        let s=new Set([1,2,2,3,4]);
+        console.log(s);
+
+        let m = new Map();
+        m.set('name','lucky');
+        console.log(m);
+
+        console.log(typeof 10);
+        console.log(typeof(Number('123')))
+        
+    </script>
+</body>
+</html>
