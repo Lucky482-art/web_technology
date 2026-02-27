@@ -3,47 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web page</title>
+    <title>Document</title>
 </head>
+
 <body>
-    <h2>
-        Check Console
-    </h2>
-    <script>
-        let a=10
-        if (a>5)
-            console.log("Positive");
-        else
-            console.log("Negative");
 
-        let day=3
-        switch(day){
-            case 1:console.log("Mon"); break
-            case 2:console.log("Tue"); break
-            default: console.log("Other")
-        } 
-        
-        for(let i=0;i<=5;i++)
-        {
-            console.log(i);
-        }
+    <img width="100" src="data:image/jpeg;base64,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" alt="">
+    
+    <h1>Admission Form</h1>
+    
+    <form>
+        <label for="Name">First Name</label>
+        <input type="text" id="Name" placeholder="Enter First Name" required>
+        <br><br>
 
-        let j=1;
-        while(j<=3){
-            console.log("While",j)
-            j++;
-        }
+        <label for="Nam">Last Name</label>
+        <input type="text" id="Nam" placeholder="Enter Last Name" required>
+        <br><br>
 
-        let s=new Set([1,2,2,3,4]);
-        console.log(s);
+        <label for="Na">Mother's Name</label>
+        <input type="text" id="Na" placeholder="Enter Mother's Name" required>
+        <br><br>
 
-        let m = new Map();
-        m.set('name','lucky');
-        console.log(m);
+        <label for="N">Roll Number</label>
+        <input type="number" id="N" placeholder="Numbers Only" required>
+        <br><br>
 
-        console.log(typeof 10);
-        console.log(typeof(Number('123')))
-        
-    </script>
+        <p><b>Select Gender :</b></p>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="sex">
+
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="sex">
+
+        <label for="other">Other</label>
+        <input type="radio" id="other" name="sex">
+        <br><br>
+
+        <p><b>Select Your Department :</b></p>
+        <select name="branch" id="branch">
+            <option value="IT">IT</option>
+            <option value="ENTC">ENTC</option>
+            <option value="AR">AR</option>
+            <option value="Mech">Mech</option>
+        </select>
+        <br><br>
+
+        <button type="submit"><b>Submit</b></button>
+    </form>
+
 </body>
 </html>
